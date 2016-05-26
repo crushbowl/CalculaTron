@@ -9,6 +9,13 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *operandOne;
+@property (weak, nonatomic) IBOutlet UITextField *operandTwo;
+@property (weak, nonatomic) IBOutlet UILabel *operationLabel;
+
+@property (weak, nonatomic) IBOutlet UIButton *additionButton;
+
+
 
 @end
 
@@ -16,12 +23,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // self.additionButton.hidden = YES;    This hides our addition button
+    
+}
+- (IBAction)onOperationTapped:(UIButton *)sender {
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
